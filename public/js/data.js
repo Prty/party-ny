@@ -1,9 +1,10 @@
 var table = [
-	"We Are Explorers"		, "Music Video"	, "Cut Copy"	, 1, 1, 'cut_copy_project_thumbnail.png',
-	"Drake Weather"			, "Website"		, "Tom Galle"	, 2, 2, 'drake_weather_project_thumbnail.png',
-	"Transitions"			, "Website"		, "Sbtrkt"		, 3, 3, 'sbtrkt_project_thumbnail.png',
-	"BANNERS"				, "Website"		, "Webby Awards", 4, 4, 'banners_project_thumbnail.png',
-	"SUPER IMPORTANT TWEET"	, "Web App"		, "Tom Galle"	, 5, 5, 'super_important_tweet_project_thumbnail.png',
+	""						, ""			, ""			, 1, 1,	'party_creative_lab_thumbnail.png',
+	"We Are Explorers"		, "Music Video"	, "Cut Copy"	, 2, 2, 'cut_copy_project_thumbnail.png',
+	"Drake Weather"			, "Website"		, "Tom Galle"	, 3, 3, 'drake_weather_project_thumbnail.png',
+	"Transitions"			, "Website"		, "Sbtrkt"		, 4, 4, 'sbtrkt_project_thumbnail.png',
+	"BANNERS"				, "Website"		, "Webby Awards", 5, 5, 'banners_project_thumbnail.png',
+	"SUPER IMPORTANT TWEET"	, "Web App"		, "Tom Galle"	, 6, 6, 'super_important_tweet_project_thumbnail.png',
 ];
 
 // var table_2 = [

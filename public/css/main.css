@@ -27,18 +27,6 @@ h1 {
 	top: 0;
 	background-color: white;	
 }
-	/*#bg-back:hover {
-		background: white;
-	}*/
-#bg-front {
-	/*position: absolute;*/
-	width: 100%;
-	height: 100%;
-	background: red;
-	opacity: 0.5;
-	/*top: 0;*/
-	pointer-events: none;
-}
 	#bg-front:hover {
 		background: white;
 	}
@@ -63,29 +51,28 @@ h1 {
 	border: 1px solid rgba(127,255,255,0.25);
 	text-align: center;
 	cursor: default;
+	opacity: 1.0;
+}
+#container > div > div {
+	background: red;
+	width: 0;
+	height: 0;
+	overflow: visible;
 }
 
-/*.element:hover {
-	box-shadow: 0px 0px 12px rgba(0,255,255,0.75);
-	border: 1px solid rgba(127,255,255,0.75);
-	cursor: pointer;
-}*/
-
-/*#container > .element {
-	opacity: 1;
-}
-
-#container:hover > .element {
+#container > div > div:hover > .element {
 	opacity: 0.1;
 }
 
-#container .element:hover {
-	opacity: 1;
-}*/
+#container > div > div:hover > .element:hover {
+	opacity: 1.0;
+	box-shadow: 0px 0px 12px rgba(0,255,255,0.75);
+	border: 1px solid rgba(127,255,255,0.75);
+}
 
-	.element:hover ~ .element:not(.active) {
+	/*.element:hover ~ .element:not(.active) {
 		opacity: 0.1;
-	}
+	}*/
 
 	/*.element:hover ~ .element:not(.active) {
 		opacity: 0.1;

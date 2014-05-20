@@ -143,8 +143,8 @@ function init() {
 
 		var object = new THREE.Object3D();
 
-		object.position.x = ( ( i % 3 ) * 300 ) - 400;
-		object.position.y = ( - ( Math.floor( i / 3 )) * 300 ) + 400;
+		object.position.x = ( ( i % 3 ) * 300 ) - 600;
+		object.position.y = ( - ( Math.floor( i / 3 )) * 300 ) - 200;
 		object.position.z = ( Math.floor( i / 25 ) );
 
 		targets.grid.push( object );
@@ -156,6 +156,19 @@ function init() {
 	renderer = new THREE.CSS3DRenderer();
 	renderer.setSize( window.innerWidth, window.innerHeight );
 	renderer.domElement.style.position = 'absolute';
+
+	//half-screen-size
+		// renderer.domElement.childNodes[0].style.width = '0px';
+		// renderer.domElement.childNodes[0].style.height = '0px';
+		// renderer.domElement.childNodes[0].style.marginTop = '200px';
+		// renderer.domElement.childNodes[0].style.marginLeft = '300px';
+
+	//full-screen-size
+	renderer.domElement.childNodes[0].style.width = '0px';
+	renderer.domElement.childNodes[0].style.height = '0px';
+	renderer.domElement.childNodes[0].style.marginTop = '50%';
+	renderer.domElement.childNodes[0].style.marginLeft = '50%';
+
 	document.getElementById( 'container' ).appendChild( renderer.domElement );
 
 	//
@@ -195,9 +208,7 @@ function init() {
 	}, false );
 
 	// initially sets the first animation of the items
-	transform( targets.helix, 1000 );
-
-	//
+	transform( targets.grid, 1000 );
 
 	window.addEventListener( 'resize', onWindowResize, false );
 
@@ -263,24 +274,28 @@ function switchBg(item_number) {
 
 	switch (item_number) {
 		case '1':
-			bg.css({'background-image': 'url("assets/projects/cut_copy.png")'});
+			bg.css({'background-image': 'url("assets/projects/party_creative_lab.png")'});
 			break;
 
 		case '2':
+			bg.css({'background-image': 'url("assets/projects/cut_copy.png")'});
+			break;
+
+		case '3':
 			bg.css({'background-image': 'url("assets/projects/drake_weather.png")'});
 			console.log(bg);
 			break;
 
-		case '3':
+		case '4':
 			bg.css({'background-image': 'url("assets/projects/sbtrkt.png")'});
 			console.log(bg);
 			break;
-		case '4':
+		case '5':
 			bg.css({'background-image': 'url("assets/projects/banners.png")'});
 			console.log(bg);
 			break;
 
-		case '5':
+		case '6':
 			bg.css({'background-image': 'url("assets/projects/super_important_tweet.png")'});
 			console.log(bg);
 			break;
