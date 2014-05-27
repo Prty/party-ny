@@ -30,13 +30,8 @@ h1 {
 	#bg-front:hover {
 		background: white;
 	}
-#container {
-	height: 100%;
-	width: 100%;
-	top: 0;
-	position: absolute;
-	z-index: 0;
-}
+
+/* lets you switch between project-views */
 #menu {
 	position: absolute;
 	bottom: 20px;
@@ -44,14 +39,13 @@ h1 {
 	text-align: center;
 }
 
-.element {
-	width: 300px;
-	height: 300px;
-	box-shadow: 0px 0px 12px rgba(0,255,255,0.5);
-	border: 1px solid rgba(127,255,255,0.25);
-	text-align: center;
-	cursor: default;
-	opacity: 1.0;
+/* threejs css3 elements */
+#container {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	position: absolute;
+	z-index: 0;
 }
 #container > div > div {
 	background: red;
@@ -60,6 +54,7 @@ h1 {
 	overflow: visible;
 }
 
+/* project-hover implementation */
 #container > div > div:hover > .element {
 	opacity: 0.1;
 }
@@ -70,17 +65,17 @@ h1 {
 	border: 1px solid rgba(127,255,255,0.75);
 }
 
-	/*.element:hover ~ .element:not(.active) {
-		opacity: 0.1;
-	}*/
+/* single-project */
+.element {
+	width: 300px;
+	height: 300px;
+	box-shadow: 0px 0px 12px rgba(0,255,255,0.5);
+	border: 1px solid rgba(127,255,255,0.25);
+	text-align: center;
+	cursor: default;
+	opacity: 1.0;
+}
 
-	/*.element:hover ~ .element:not(.active) {
-		opacity: 0.1;
-	}*/
-
-	/*.element:hover ~ #container:not(.element) {
-		opacity: 0.1;
-	}*/
 	.element .number {
 		position: absolute;
 		top: 20px;

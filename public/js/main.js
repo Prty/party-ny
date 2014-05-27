@@ -249,6 +249,12 @@ function onWindowResize() {
 
 	renderer.setSize( window.innerWidth, window.innerHeight );
 
+	renderer.domElement.childNodes[0].style.width = '0px';
+	renderer.domElement.childNodes[0].style.height = '0px';
+	renderer.domElement.childNodes[0].style.marginTop = '50%';
+	renderer.domElement.childNodes[0].style.marginLeft = '50%';
+	document.getElementById( 'container' ).appendChild( renderer.domElement );
+
 	render();
 
 }
@@ -332,7 +338,7 @@ project_items.hover(function () {
 }).mouseleave(function () {
 	hover_item.removeClass('active');
 	item_active = false;
-	setTimeout(function () {
-		resetBg();
-	}, 500);
+	// setTimeout(function () {
+	// 	resetBg();
+	// }, 500);
 });
